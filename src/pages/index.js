@@ -1,9 +1,19 @@
-import styles from './page.module.css'
+import Head from 'next/head'
 
 
 export default function Home() {
+  const handleClick = () => {
+    console.count('click')
+  }
   return (
-    <>
+        <>
+      <Head>
+        <title>Balley Sports | TV Screen Saver</title>
+        <meta name="description" content="Inflatable Bally Sports TV Screen Saver with air from your lungs." />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
+
       <header className='container'>
         <span>bally sports</span>
         <h1>tv screen saver</h1>
@@ -37,7 +47,7 @@ export default function Home() {
             <p>subscrive to bally sports+ for just <s>$19.99</s> $14.99/month and start streaming today!</p>
             <div className="input-group">
               <input type="text" name='zip_code' id='zipCode'/>
-              <input type="button" value="see packages" />
+              <input type="button" value="see packages" onClick={handleClick} />
             </div>
             <span>view team packages available in your area</span>
           </form>
