@@ -1,91 +1,53 @@
-import Image from 'next/image'
-import { Inter } from 'next/font/google'
 import styles from './page.module.css'
 
-const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
   return (
-    <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>app/page.tsx</code>
-        </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
-        </div>
-      </div>
+    <>
+      <header className='container'>
+        <span>bally sports</span>
+        <h1>tv screen saver</h1>
+      </header>
 
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-        <div className={styles.thirteen}>
-          <Image src="/thirteen.svg" alt="13" width={40} height={31} priority />
-        </div>
-      </div>
+      <main>
+        <section className="hero">
+          <div className="container">
+            <div className="hero-image">video of remote inflating</div>
+            <div className="hero-content">
+              <h2>say goodbye to shattered tv screens due to playoff hockey rage!</h2>
+              <div className="hero-copy">
+                <p>Simply inflate you Balley Sports TB Screen Saver with air from your lungs, snugly slide your remote inside, and watch the anger bounce fight off your screen!</p>
+                <img src="#" alt="broken tv icon" />
+              </div>
+            </div>
+          </div>
+        </section>
 
-      <div className={styles.grid}>
-        <a
-          href="https://beta.nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={inter.className}>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p className={inter.className}>
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
+        <section className="video container">
+          <div className="video-container">
+            <video src="#">Youtube bideo will go here</video>
+          </div>
+          <p>sold out! so sorry!</p>
+        </section>
 
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={inter.className}>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p className={inter.className}>Explore the Next.js 13 playground.</p>
-        </a>
+        <section className="cta container">
+          <p>to make it up to you, here's a super secret deal on bally sports+!</p>
+          <form action="">
+            <span>7-day free trial</span>
+            <p>subscrive to bally sports+ for just <s>$19.99</s> $14.99/month and start streaming today!</p>
+            <div className="input-group">
+              <input type="text" name='zip_code' id='zipCode'/>
+              <input type="button" value="see packages" />
+            </div>
+            <span>view team packages available in your area</span>
+          </form>
+        </section>
+      </main>
 
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={inter.className}>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p className={inter.className}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
+      <footer className='container'>
+        <a href="#">boring legal copy</a>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea dolore, blanditiis et nobis cumque animi impedit repellendus dicta fugit cum debitis, ipsum quia culpa rem sit amet veritatis quibusdam dolorem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum tenetur quos quis cupiditate doloribus est, molestiae odit modi consequatur libero. Voluptatum fugiat, dolorum nam consequatur cumque nobis harum pariatur nihil? Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores quod illo id enim sed ratione quibusdam quos? Omnis impedit commodi alias nam! Aliquid ipsum ducimus recusandae magni mollitia ratione rem?</p>
+      </footer>    
+    </>
   )
 }
