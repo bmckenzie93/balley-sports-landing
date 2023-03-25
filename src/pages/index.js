@@ -1,4 +1,8 @@
 import Head from 'next/head'
+import Image from 'next/image'
+import ballyIcon from '../../public/bs-icon_400x2000.jpg'
+import noBreak from '../../public/bs-no-break.jpg'
+// import video from '../../public/fpo-video.mp4'
 
 
 export default function Home() {
@@ -15,19 +19,25 @@ export default function Home() {
       </Head>
 
       <header className='container'>
-        <span>bally sports</span>
+        <Image src={ ballyIcon } className="logo" />
         <h1>tv screen saver</h1>
       </header>
 
       <main>
         <section className="hero">
-          <div className="container">
-            <div className="hero-image">video of remote inflating</div>
+          <div className="container--lg">
+          <video autoplay controls loop src={'/fpo-video.mp4'} className='hero-image' /> 
             <div className="hero-content">
-              <h2>say goodbye to shattered tv screens due to playoff hockey rage!</h2>
+              <h2>
+                say goodbye to
+                  <br /> 
+                shattered tv screens due 
+                  <br /> 
+                to playoff hockey rage!
+              </h2>
               <div className="hero-copy">
-                <p>Simply inflate you Balley Sports TB Screen Saver with air from your lungs, snugly slide your remote inside, and watch the anger bounce fight off your screen!</p>
-                <img src="#" alt="broken tv icon" />
+                <p>Simply inflate you Balley Sports TV         Screen Saver with air from your lungs, snugly slide your remote inside, and watch the anger bounce fight off your screen!</p>
+                <Image src={ noBreak } />
               </div>
             </div>
           </div>
