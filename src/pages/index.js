@@ -1,14 +1,11 @@
+import { useState } from 'react'
 import Head from 'next/head'
 import Image from 'next/image'
 import ballyIcon from '../../public/bs-icon_400x2000.jpg'
 import noBreak from '../../public/bs-no-break.jpg'
-// import video from '../../public/fpo-video.mp4'
 
 
 export default function Home() {
-  const handleClick = () => {
-    console.count('click')
-  }
   return (
         <>
       <Head>
@@ -19,14 +16,14 @@ export default function Home() {
       </Head>
 
       <header className='container'>
-        <Image src={ ballyIcon } className="logo" />
+        <Image src={ ballyIcon } className="logo" alt='Bally Sports Logo' />
         <h1>tv screen saver</h1>
       </header>
 
       <main>
         <section className="hero">
           <div className="container--lg">
-          <video autoplay controls loop src={'/fpo-video.mp4'} className='hero-image' /> 
+          <video autoPlay controls loop src={'/fpo-video.mp4'} className='hero-image' /> 
             <div className="hero-content">
               <h2>
                 say goodbye to
@@ -37,7 +34,7 @@ export default function Home() {
               </h2>
               <div className="hero-copy">
                 <p>Simply inflate you Balley Sports TV         Screen Saver with air from your lungs, snugly slide your remote inside, and watch the anger bounce fight off your screen!</p>
-                <Image src={ noBreak } />
+                <Image src={ noBreak } alt='No broken TV icon' />
               </div>
             </div>
           </div>
@@ -45,28 +42,37 @@ export default function Home() {
 
         <section className="video container">
           <div className="video-container">
-            <video src="#">Youtube bideo will go here</video>
+              <iframe src="https://www.youtube.com/embed/0QCx5pvlUIc" 
+                title="FPO Video Player" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                allowFullScreen>
+              </iframe>
           </div>
           <p>sold out! so sorry!</p>
         </section>
 
         <section className="cta container">
-          <p>to make it up to you, here's a super secret deal on bally sports+!</p>
-          <form action="">
+          <h2>to make it up to you, here's a super secret deal on bally sports+!</h2>
+          <div className='cta-box'>
             <span>7-day free trial</span>
-            <p>subscrive to bally sports+ for just <s>$19.99</s> $14.99/month and start streaming today!</p>
-            <div className="input-group">
-              <input type="text" name='zip_code' id='zipCode'/>
-              <input type="button" value="see packages" onClick={handleClick} />
-            </div>
+            <p>subscribe to bally sports+ <br />for just <s>$19.99</s> $14.99/month and <br></br> start streaming today!</p>
+              <a href="#" target="_blank" rel="noopener noreferrer">see packages</a>
             <span>view team packages available in your area</span>
-          </form>
+          </div>
         </section>
       </main>
 
       <footer className='container'>
         <a href="#">boring legal copy</a>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea dolore, blanditiis et nobis cumque animi impedit repellendus dicta fugit cum debitis, ipsum quia culpa rem sit amet veritatis quibusdam dolorem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum tenetur quos quis cupiditate doloribus est, molestiae odit modi consequatur libero. Voluptatum fugiat, dolorum nam consequatur cumque nobis harum pariatur nihil? Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores quod illo id enim sed ratione quibusdam quos? Omnis impedit commodi alias nam! Aliquid ipsum ducimus recusandae magni mollitia ratione rem?</p>
+        <p>
+          bally sports does not endorse throwing your remote at your tv, and is not responsible for any screens 
+          <br />
+          broken while using this product. although it bears a striking resemblance to a pool arm floaty thing,
+          <br />
+          the bally sports tv screen saver is definitely not one, and is therefore not approved for aquatic use. 
+          <br />
+          &copy; 2023 bally sports. all rights reserved
+        </p>
       </footer>    
     </>
   )
