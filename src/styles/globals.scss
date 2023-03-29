@@ -1,10 +1,123 @@
+// THIN
+@font-face {
+  font-family: 'national_2';
+    src: url('../fonts/national2-thin-webfont.woff') format('woff');
+  font-weight: 100;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'national_2';
+    src: url('../fonts/national2-thinitalic-webfont.woff') format('woff');
+  font-weight: 100;
+  font-style: italic;
+}  
+
+// EXTRA LIGHT
+@font-face {
+  font-family: 'national_2';
+    src: url('../fonts/national2-extralight-webfont.woff') format('woff');
+  font-weight: 200;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'national_2';
+    src: url('../fonts/national2-extralightitalic-webfont.woff') format('woff');
+  font-weight: 200;
+  font-style: italic;
+}
+
+// LIGHT
+@font-face {
+  font-family: 'national_2';
+    src: url('../fonts/national2-light-webfont.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'national_2';
+    src: url('../fonts/national2-lightitalic-webfont.woff') format('woff');
+  font-weight: 300;
+  font-style: italic;
+}
+
+// NORMAL
+@font-face {
+  font-family: 'national_2';
+    src: url('../fonts/national2-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'national_2';
+    src: url('../fonts/national2-regularitalic-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: italic;
+}
+
+// MEDIUM
+@font-face {
+  font-family: 'national_2';
+    src: url('../fonts/national2-medium-webfont.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'national_2';
+    src: url('../fonts/national2-mediumitalic-webfont.woff') format('woff');
+  font-weight: 500;
+  font-style: italic;
+}
+
+// BOLD
+@font-face {
+  font-family: 'national_2';
+    src: url('../fonts/national2-bold-webfont.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'national_2';
+    src: url('../fonts/national2-bolditalic-webfont.woff') format('woff');
+  font-weight: 700;
+  font-style: italic;
+}
+
+// EXTRA BOLD
+@font-face {
+  font-family: 'national_2';
+    src: url('../fonts/national2-extrabold-webfont.woff') format('woff');
+  font-weight: 800;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'national_2';
+    src: url('../fonts/national2-extrabolditalic-webfont.woff') format('woff');
+  font-weight: 800;
+  font-style: italic;
+}
+
+// BLACK
+@font-face {
+  font-family: 'national_2';
+    src: url('../fonts/national2-black-webfont.woff') format('woff');
+  font-weight: 900;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'national_2';
+    src: url('../fonts/national2-blackitalic-webfont.woff') format('woff');
+  font-weight: 900;
+  font-style: italic;
+}
+
+
 :root {
   --max-width: 900px;
   --max-width--lg: 1200px;
   --border-radius: 12px;
   --input-radius: 40%;
   --section-padding: 40px;
-  --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, 
+  --font-sans: 'national_2', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, 
     Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   --color-primary: #fe0000;
   --color-white: #fff;
@@ -73,6 +186,36 @@ footer {
     @extend .container;
     width: var(--max-width--lg);
     padding: 0;
+  }
+}
+
+nav {
+  background-color: var(--color-black);
+  height: 74px;
+
+  .container--lg {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+  }
+
+  img {
+    width: 110px;
+    height: auto;
+  }
+
+  .btn {
+    background-color: var(--color-white);
+    color: var(--color-black);
+    width: 90px;
+    height: 28px;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 12px;
   }
 }
 

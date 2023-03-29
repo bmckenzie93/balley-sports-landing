@@ -1,8 +1,8 @@
-import { useState } from 'react'
 import Head from 'next/head'
 import Image from 'next/image'
 import ballyIcon from '../../public/bs-icon_400x2000.jpg'
 import noBreak from '../../public/bs-no-break.jpg'
+import bsLogo from '../../public/bs-logo.png'
 
 
 export default function Home() {
@@ -14,9 +14,16 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
+      
+      <nav>
+        <div className="container--lg">
+          <Image src={ bsLogo } className="logo" alt='Bally Sports Logo' /> 
+          <a href="https://www.ballysports.com/packages/" target='_blank' className="btn">sign up</a>          
+        </div>
+      </nav>
 
       <header className='container'>
-        <Image src={ ballyIcon } className="logo" alt='Bally Sports Logo' />
+        <Image src={ bsLogo } className="logo" alt='Bally Sports Logo' />
         <h1>tv screen saver</h1>
       </header>
 
