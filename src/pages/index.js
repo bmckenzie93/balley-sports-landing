@@ -3,6 +3,7 @@ import Image from 'next/image'
 import ballyIcon from '../../public/bs-icon_400x2000.jpg'
 import noBreak from '../../public/bs-no-break.jpg'
 import bsLogo from '../../public/bs-logo.png'
+import bsRemote from '../../public/bs-remote.png'
 
 
 export default function Home() {
@@ -30,7 +31,7 @@ export default function Home() {
       <main>
         <section className="hero">
           <div className="container--lg">
-          <video autoPlay controls loop src={'/fpo-video.mp4'} className='hero-image' /> 
+          <Image className ="hero-image" src={bsRemote} alt="Remote with red pool arm inflatable around it." />
             <div className="hero-content">
               <h2>
                 say goodbye to
