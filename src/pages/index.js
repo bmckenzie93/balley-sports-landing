@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import ballyIcon from '../../public/bs-icon_400x2000.jpg'
-import noBreak from '../../public/bs-no-break.jpg'
+import tvLogo from '../../public/tv-logo.png'
 import bsLogo from '../../public/bs-logo.png'
 import bsRemote from '../../public/bs-remote.png'
 
@@ -41,8 +41,10 @@ export default function Home() {
                 to playoff hockey rage!
               </h2>
               <div className="hero-copy">
-                <p>Simply inflate you Balley Sports TV         Screen Saver with air from your lungs, snugly slide your remote inside, and watch the anger bounce fight off your screen!</p>
-                <Image src={ noBreak } alt='No broken TV icon' />
+                <p>
+                Simply inflate your Bally Sports TV Screen Saver with <br></br> air from your lungs, snugly slide your remote inside,<br></br>and watch the anger bounce right off your screen!
+                </p>
+                <Image src={ tvLogo } alt='No broken TV icon' />
               </div>
             </div>
           </div>
