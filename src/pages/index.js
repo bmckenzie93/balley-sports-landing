@@ -20,7 +20,7 @@ export default function Home() {
       <nav>
         <div className="container--lg">
           <Image src={ bsLogo } className="logo" alt='Bally Sports Logo' /> 
-          <a href="https://www.ballysports.com/packages/" target='_blank' className="btn">sign up</a>          
+          <a href="https://ballysports.app.link/e/screensaver" target='_blank' className="btn">sign up</a>          
         </div>
       </nav>
 
@@ -36,14 +36,16 @@ export default function Home() {
             <div className="hero-content">
               <h2>
                 say goodbye to
-                  <br /> 
-                shattered tv screens due 
-                  <br /> 
+                  <span className="spacer"> </span><br /> 
+                shattered tv screens due
+                <span className="spacer"> </span><br />  
                 to playoff hockey rage!
               </h2>
               <div className="hero-copy">
                 <p>
-                Simply inflate your Bally Sports TV Screen Saver with <br></br> air from your lungs, snugly slide your remote inside,<br></br>and watch the anger bounce right off your screen!
+                Simply inflate your Bally Sports TV Screen Saver with 
+                <span className="spacer"> </span><br></br> air from your lungs, snugly slide your remote inside,
+                <span className="spacer"> </span><br></br>and watch the anger bounce right off your screen!
                 </p>
                 <Image src={ tvLogo } alt='No broken TV icon' />
               </div>
@@ -89,29 +91,28 @@ export default function Home() {
               Subscribe to Bally Sports+ and 
               <br></br>start streaming today!
             </p>
-              <a href="#" target="_blank" rel="noopener noreferrer">see packages</a>
+              <a href="https://ballysports.app.link/e/screensaver" target="_blank" rel="noopener noreferrer">see packages</a>
             <span>view team packages available in your area</span>
           </div>
         </section>
 
-        <section className="video-bar">
-          video bar
-        </section>
+        <section className="video-bar"></section>
       </main>
 
-      <footer>
+      <footer id='boringLegalCopy'>
         <div className="container">
-          <a href="#">boring legal copy</a>
+          <a href="#boringLegalCopy">boring legal copy</a>
           <p>
-            bally sports does not endorse throwing your remote at your tv, and is not responsible for any screens 
+            BALLY SPORTS DOES NOT ENDORSE THROWING YOUR REMOTE AT YOUR TV, AND IS NOT RESPONSIBLE FOR ANY SCREENS BROKEN WHILE USING THIS PRODUCT. ALTHOUGH IT BEARS A STRIKING RESEMBLANCE TO A POOL ARM
+            <br />FLOATY THING, THE BALLY SPORTS TV SCREEN SAVER IS DEFINITELY NOT ONE, AND IS THEREFORE NOT APPROVED FOR AQUATIC USE.
+            <br /> 
+            <br />*Free trial for new subscribers only. You acknowledge you are purchasing a subscription for our regional package. This package only includes access to live games in which the above-identified
+            <br />teams compete. Not all of those teams’ games may be available. Access to games outside of your Home Territory also may be limited.
             <br />
-            broken while using this product. although it bears a striking resemblance to a pool arm floaty thing,
+            <br />Access to content is not guaranteed and varies by location at time of access. Access to certain content is based on Home Territory and our ability to access your location information. Regional restrictions and blackouts apply. Please refer to the Bally Sports+ Subscriber Agreement for details.
             <br />
-            the bally sports tv screen saver is definitely not one, and is therefore not approved for aquatic use. 
-            <br />
-            &copy; 2023 bally sports. all rights reserved
+            <br />&copy; 2023 Diamond Sports, LLC. All Rights Reserved.
           </p>
-
         </div>
       </footer>    
     </>
