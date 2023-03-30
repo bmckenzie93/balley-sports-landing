@@ -3,6 +3,7 @@ import Image from 'next/image'
 import ballyIcon from '../../public/bs-icon_400x2000.jpg'
 import tvLogo from '../../public/tv-logo.png'
 import bsLogo from '../../public/bs-logo.png'
+import bsPlusLogo from '../../public/bs-plus-logo.png'
 import bsRemote from '../../public/bs-remote.png'
 
 
@@ -58,31 +59,60 @@ export default function Home() {
                 allowFullScreen>
               </iframe>
           </div>
-          <p>sold out! so sorry!</p>
+          <p>
+          YOU MIGHT CRACK UNDER THE PRESSURE,<br></br> BUT AT LEAST YOUR SCREEN WON’T.
+          </p>
+        </section>
+
+        <section className="roadblock">
+          <div className="container">
+            <p>
+              <span>bad news:</span>
+              <br /> OUR Cautious LAWYERS ARE TOO 
+              <br /> Cautious TO LET US GIVE THESE AWAY! 
+              <br /> BOOOOOOOOOOOO!
+            </p>
+          </div>
         </section>
 
         <section className="cta container">
-          <h2>to make it up to you, here's a super secret deal on bally sports+!</h2>
+          <p>
+            <span>good news:</span>
+            <br /> you can start watching the NHL playoffs
+            <br /> with a free week of bally sports+!
+          </p>
+
           <div className='cta-box'>
+            <Image src={ bsPlusLogo } className="logo" alt='Bally Sports + Logo' />
             <span>7-day free trial</span>
-            <p>subscribe to bally sports+ <br />for just <s>$19.99</s> $14.99/month and <br></br> start streaming today!</p>
+            <p>
+              Subscribe to Bally Sports+ and 
+              <br></br>start streaming today!
+            </p>
               <a href="#" target="_blank" rel="noopener noreferrer">see packages</a>
             <span>view team packages available in your area</span>
           </div>
         </section>
+
+        <section className="video-bar">
+          video bar
+        </section>
       </main>
 
-      <footer className='container'>
-        <a href="#">boring legal copy</a>
-        <p>
-          bally sports does not endorse throwing your remote at your tv, and is not responsible for any screens 
-          <br />
-          broken while using this product. although it bears a striking resemblance to a pool arm floaty thing,
-          <br />
-          the bally sports tv screen saver is definitely not one, and is therefore not approved for aquatic use. 
-          <br />
-          &copy; 2023 bally sports. all rights reserved
-        </p>
+      <footer>
+        <div className="container">
+          <a href="#">boring legal copy</a>
+          <p>
+            bally sports does not endorse throwing your remote at your tv, and is not responsible for any screens 
+            <br />
+            broken while using this product. although it bears a striking resemblance to a pool arm floaty thing,
+            <br />
+            the bally sports tv screen saver is definitely not one, and is therefore not approved for aquatic use. 
+            <br />
+            &copy; 2023 bally sports. all rights reserved
+          </p>
+
+        </div>
       </footer>    
     </>
   )
