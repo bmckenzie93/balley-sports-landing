@@ -89,7 +89,7 @@ export default function Home() {
             <span>7-day free trial</span>
             <p>
               Subscribe to Bally Sports+ and 
-              <br></br>start streaming today!
+              <span className="spacer"> </span><br></br>start streaming today!
             </p>
               <a href="https://ballysports.app.link/e/screensaver" target="_blank" rel="noopener noreferrer">see packages</a>
             <span>view team packages available in your area</span>
