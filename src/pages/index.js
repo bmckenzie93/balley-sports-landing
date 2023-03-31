@@ -81,7 +81,7 @@ export default function Home() {
           <p>
             <span>good news:</span>
             <br /> you can start watching the NHL playoffs
-            <br /> with a free week of bally sports+!
+            <span className="spacer"> </span><br /> with a free week of bally sports+!
           </p>
 
           <div className='cta-box'>
