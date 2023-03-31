@@ -417,8 +417,12 @@ header {
     }
 
     @media(max-width: 860px) {
-      margin-bottom: 30px;
+      margin-bottom: 32px;
       padding-top: 6px;
+    }
+
+    @media(max-width: 500px) {
+      font-size: 25px;
     }
   }
 
