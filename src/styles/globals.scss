@@ -553,6 +553,8 @@ header {
   }
 
   @media(max-width: 800px) {
+    padding-bottom: 32px;
+
     span:first-child {
       display: block;
     }
@@ -611,6 +613,10 @@ header {
 
   @media(max-width: 1050px) {
     padding: 30px;
+  }
+
+  @media(max-width: 800px) {
+    height: 100%;
   }
 
   img {
@@ -705,12 +711,26 @@ header {
 footer {
   background-color: var(--color-black);
   height: 373px;
+
+  @media(max-width: 1180px) {
+    height: 100%;
+  }
+
+  .container {
+    @media(max-width: 1180px) {
+      width: 100%;
+    }
+  }
   a {
     margin-top: 3px;
     margin-bottom: 30px;
     display: inline-block;
     font-weight: 500;
     transform: scaleY(1.2);
+
+    @media(max-width: 1180px) {
+      margin-bottom: 50px;
+    }
   }
   
   p {
