@@ -106,16 +106,19 @@ export default function Home() {
           <a href="#boringLegalCopy">boring legal copy</a>
           <p>
             BALLY SPORTS DOES NOT ENDORSE THROWING YOUR REMOTE AT YOUR TV, AND IS NOT RESPONSIBLE FOR ANY SCREENS BROKEN WHILE USING THIS PRODUCT. ALTHOUGH 
-            <br />IT BEARS A STRIKING RESEMBLANCE TO A POOL ARM FLOATY THING, THE BALLY SPORTS TV SCREEN SAVER IS DEFINITELY NOT ONE, AND IS THEREFORE NOT APPROVED FOR
-            <br /> AQUATIC USE.
+            <span className="spacer"> </span><br></br> IT BEARS A STRIKING RESEMBLANCE TO A POOL ARM FLOATY THING, THE BALLY SPORTS TV SCREEN SAVER IS DEFINITELY NOT ONE, AND IS THEREFORE NOT APPROVED FOR
+            <span className="spacer"> </span><br></br> AQUATIC USE.
+            <span className='br'> </span>
             <br />
-            <br />*Free trial for new subscribers only. You acknowledge you are purchasing a subscription for our regional package. This package only includes
-            <br />access to live games in which the above-identifiedteams compete. Not all of those teams’ games may be available. Access to games outside of your
-            <br /> Home Territory also may be limited.
+            <span className="spacer"> </span><br></br> *Free trial for new subscribers only. You acknowledge you are purchasing a subscription for our regional package. This package only includes
+            <span className="spacer"> </span><br></br> access to live games in which the above-identifiedteams compete. Not all of those teams’ games may be available. Access to games outside of your
+            <span className="spacer"> </span><br></br> Home Territory also may be limited.
+            <span className='br'> </span>
             <br />
-            <br />Access to content is not guaranteed and varies by location at time of access. Access to certain content is based on Home Territory and our ability
-            <br />to access your location information. Regional restrictions and blackouts apply. Please refer to the Bally Sports+ Subscriber Agreement for
-            <br />details.
+            <span className="spacer"> </span><br></br> Access to content is not guaranteed and varies by location at time of access. Access to certain content is based on Home Territory and our ability
+            <span className="spacer"> </span><br></br> to access your location information. Regional restrictions and blackouts apply. Please refer to the Bally Sports+ Subscriber Agreement for
+            <span className="spacer"> </span><br></br> details.
+            <span className='br'> </span>
             <br />
             &copy; 2023 Diamond Sports, LLC. All Rights Reserved.
           </p>
