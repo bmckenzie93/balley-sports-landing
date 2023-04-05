@@ -1,113 +1,30 @@
-// THIN
+// National 2 Regular
 @font-face {
   font-family: 'national_2';
-    src: url('../fonts/national2-thin-webfont.woff') format('woff');
-  font-weight: 100;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'national_2';
-    src: url('../fonts/national2-thinitalic-webfont.woff') format('woff');
-  font-weight: 100;
-  font-style: italic;
-}  
-
-// EXTRA LIGHT
-@font-face {
-  font-family: 'national_2';
-    src: url('../fonts/national2-extralight-webfont.woff') format('woff');
-  font-weight: 200;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'national_2';
-    src: url('../fonts/national2-extralightitalic-webfont.woff') format('woff');
-  font-weight: 200;
-  font-style: italic;
-}
-
-// LIGHT
-@font-face {
-  font-family: 'national_2';
-    src: url('../fonts/national2-light-webfont.woff') format('woff');
-  font-weight: 300;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'national_2';
-    src: url('../fonts/national2-lightitalic-webfont.woff') format('woff');
-  font-weight: 300;
-  font-style: italic;
-}
-
-// NORMAL
-@font-face {
-  font-family: 'national_2';
-    src: url('../fonts/national2-regular-webfont.woff') format('woff');
+    src: url('../fonts/national2-regular.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
+// National 2 Bold
 @font-face {
   font-family: 'national_2';
-    src: url('../fonts/national2-regularitalic-webfont.woff') format('woff');
+    src: url('../fonts/national2-bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+// National 2 Condenced Regular
+@font-face {
+  font-family: 'national_2-condenced';
+  src: url('../fonts/national2condensed-regular.woff') format('woff');
   font-weight: normal;
-  font-style: italic;
-}
-
-// MEDIUM
-@font-face {
-  font-family: 'national_2';
-    src: url('../fonts/national2-medium-webfont.woff') format('woff');
-  font-weight: 500;
   font-style: normal;
 }
+// National 2 Condenced Bold
 @font-face {
-  font-family: 'national_2';
-    src: url('../fonts/national2-mediumitalic-webfont.woff') format('woff');
-  font-weight: 500;
-  font-style: italic;
-}
-
-// BOLD
-@font-face {
-  font-family: 'national_2';
-    src: url('../fonts/national2-bold-webfont.woff') format('woff');
-  font-weight: 700;
+  font-family: 'national_2-condenced';
+    src: url('../fonts/national2condensed-bold.woff') format('woff');
+  font-weight: bold;
   font-style: normal;
-}
-@font-face {
-  font-family: 'national_2';
-    src: url('../fonts/national2-bolditalic-webfont.woff') format('woff');
-  font-weight: 700;
-  font-style: italic;
-}
-
-// EXTRA BOLD
-@font-face {
-  font-family: 'national_2';
-    src: url('../fonts/national2-extrabold-webfont.woff') format('woff');
-  font-weight: 800;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'national_2';
-    src: url('../fonts/national2-extrabolditalic-webfont.woff') format('woff');
-  font-weight: 800;
-  font-style: italic;
-}
-
-// BLACK
-@font-face {
-  font-family: 'national_2';
-    src: url('../fonts/national2-black-webfont.woff') format('woff');
-  font-weight: 900;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'national_2';
-    src: url('../fonts/national2-blackitalic-webfont.woff') format('woff');
-  font-weight: 900;
-  font-style: italic;
 }
 
 
@@ -117,7 +34,9 @@
   --border-radius: 12px;
   --input-radius: 40%;
   --section-padding: 40px;
-  --font-sans: 'national_2', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, 
+  --national-2: 'national_2', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, 
+    Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  --national-2-condenced: 'national_2-condenced', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, 
     Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   --color-primary: #fe0000;
   --color-white: #fff;
@@ -131,7 +50,6 @@
     --max-width--lg: 900px;
   }
 } 
-
 *,
 *::before,
 *::after {
@@ -139,38 +57,21 @@
   padding: 0;
   margin: 0;
 }
-
 html,
 body {
   max-width: 100vw;
   overflow-x: hidden;
 }
-
 body {
   color: var(--color-white);
   background: var(--color-primary);
   text-align: center;
   text-transform: uppercase;
-  font-family: var(--font-sans);
-
-  h1,
-  h2,
-  h3 {
-    font-weight: 600;
-    transform: scaleY(1.4);
-    color: var(--color-white)
+  font-family: var(--national-2-condenced);
+  
+  a {
+    color: inherit;
   }
-}
-
-
-a {
-  color: inherit;
-}
-
-header,
-section,
-footer {
-  padding: var(--section-padding) 0;
 }
 
 .container {
@@ -210,6 +111,7 @@ nav {
   }
 
   .btn {
+    font-family: var(--national-2);
     background-color: var(--color-white);
     color: var(--color-black);
     width: 80px;
@@ -224,14 +126,18 @@ nav {
 }
 
 header {
-  min-height: 341px;
+  min-height: 342px;
 
   @media(max-width: 1440px) {
-    min-height: 300px;
+    min-height: 265px;
   }
 
   @media(max-width: 900px) {
-    min-height: 200px;
+    min-height: 220px;
+  }
+
+  @media(max-width: 600px) {
+    min-height: 190px;
   }
 
   &.container {
@@ -243,7 +149,6 @@ header {
 
     @media(max-width: 1180px) {
       width: 100%;
-      min-height: unset;
     }
   }
 
@@ -252,7 +157,7 @@ header {
     width: 350px;
     height: auto;
     margin: 0 auto;
-    padding-top: 22px;
+    padding-top: 62px;
 
     @media(max-width: 1440px) {
       width: 300px
@@ -268,10 +173,10 @@ header {
   }
 
   h1 {
-    font-size: 95px;
-    font-weight: 600;
+    font-size: 137px;
+    font-weight: bold;
     margin-bottom: 30px;
-    transform: scaleY(1.4);
+    transform: translateY(-23px);
 
     @media(max-width: 1440px) {
       font-size: 70px;
@@ -342,6 +247,7 @@ header {
 
   &-content {
     flex: 3;
+    min-width: 735px;
     text-align: left;
     transform: translateX(-13px);
 
@@ -373,7 +279,7 @@ header {
     img {
       width: 160px;
       height: 160px;
-      transform: translate(41px, 44px);
+      transform: translate(-28px, 5px);
 
       @media(max-width: 1180px) {
         transform: translate(0, 0);
@@ -389,12 +295,11 @@ header {
 
   h2 {
     color: var(--color-primary);
-    font-size: 50px;
-    padding-top: 103px;
-    font-weight: 800;
-    transform: scaleY(1.5);
-    line-height: .9;
-    margin-bottom: 72px;
+    font-size: 76px;
+    padding-top: 96px;
+    font-weight: bold;
+    line-height: .89;
+    margin-bottom: 30px;
 
     .spacer {
       display: none;
@@ -427,10 +332,12 @@ header {
   }
 
   &-copy p {
+    font-family: var(--national-2);
     text-transform: initial;
-    font-size: 22.4px;
+    font-size: 34px;
+    line-height: 1.1;
     text-align: justify;
-    transform: scaleY(1.5);
+    min-width: 600px;
 
     .spacer {
       display: none;
@@ -459,9 +366,8 @@ header {
 
   &-container {
     border: 10px solid var(--color-white);
-    margin-bottom: 22px;
-    margin-top: 38px;
-    height: 636px;
+    margin-top: 78px;
+    height: 638px;
     background-color: var(--color-white);
 
     @media(max-width: 1180px) {
@@ -478,12 +384,12 @@ header {
 
   p {
     color: var(--color-white);
-    font-size: 35px; 
+    font-size: 50px; 
     font-weight: 600;
-    transform: scaleY(1.3);
     padding-top: 40px;
-    line-height: 1.05;
-    padding-bottom: 117px;
+    line-height: .9;
+    padding-bottom: 76px;
+    letter-spacing: .2px;
 
     @media(max-width: 1180px) {
       font-size: 30px;
@@ -502,12 +408,11 @@ header {
 }
 
 .roadblock {
-  margin-bottom: 238px;
+  margin-bottom: 56px;
   background-color: var(--color-black);
-  font-size: 50px;
-  font-weight: 700;
-  transform: scaleY(1.47);
-  padding: 42px 0;
+  font-weight: bold;
+  padding: 46px 0;
+  height: 533px;
 
   @media(max-width: 600px) {
     padding: 36px 0;
@@ -515,7 +420,7 @@ header {
   }
 
   .container {
-    padding: 42px 0;
+    padding: 82px 0;
 
     @media(max-width: 1180px) {
       width: 100%;
@@ -528,13 +433,18 @@ header {
     }
   }
 
-  span { color: var(--color-primary); }
+  span { 
+    color: var(--color-primary);
+    display: inline-block;
+    margin-bottom: 7px;
+  }
 
   p {
     padding: 0;
-    line-height: .96;
-    transform: translateY(-13px);
+    line-height: .97;
+    transform: translateY(-24px);
     letter-spacing: 1px;
+    font-size: 72px;
     
     @media(max-width: 1180px) {
       line-height: 1;
@@ -544,11 +454,15 @@ header {
 }
 
 .cta {
-  span { color: var(--color-black); }
+  span { 
+    color: var(--color-black);
+    display: inline-block;
+    margin-bottom: 7px; 
+  }
 
-  font-size: 50px;
-  font-weight: 700;
-  transform: scaleY(1.47);
+  font-size: 72px;
+  font-weight: bold;
+  // transform: scaleY(1.47);
   padding-bottom: 76px;
 
   @media(max-width: 1180px) {
@@ -580,7 +494,7 @@ header {
 
   p {
     padding: 0;
-    line-height: 1;
+    line-height: .97;
     letter-spacing: 1px;
   }
 
@@ -605,11 +519,11 @@ header {
 }
 
 .cta-box {
-  height: 310px;
+  height: 453px;
   background-color: var(--color-white);
   border-radius: 30px;
-  padding: 10px 136px;
-  margin-top: 39px;
+  padding: 30px 136px;
+  margin-top: 61px;
 
   @media(max-width: 1180px) {
     margin-top: 30px;
@@ -625,7 +539,8 @@ header {
 
   img {
     width: 289px;
-    height: 46px;
+    height: auto;
+    margin-bottom: 3px;
 
     @media(max-width: 800px) {
       width: 200px;
@@ -636,8 +551,8 @@ header {
 
   span {
     color: var(--color-black);
-    font-weight: 800;
-    font-size: 29px;
+    font-weight: bold;
+    font-size: 43px;
     transform: translateY(-10px);
     display: block;
 
@@ -646,9 +561,9 @@ header {
     }
 
     &:last-child {
-      font-size: 17.2px;
+      font-size: 25.5px;
       font-weight: 800;
-      margin-top: 20px;
+      margin-top: 26px;
 
       @media(max-width: 800px) {
         font-size: 14px;
@@ -659,11 +574,10 @@ header {
 
   p {
     color: var(--color-primary);
-    font-size: 40px;
+    font-size: 57px;
     font-weight: 700;
     margin-top: -8px;
-    line-height: .9;
-    margin-top: -4px;
+    line-height: 1;
 
     @media(max-width: 1180px) {
       font-size: 30px;
@@ -680,17 +594,17 @@ header {
   }
 
   a {
+    font-family: var(--national-2);
+    font-weight: bold;
     font-size: 16px;
     background-color: var(--color-primary);
     border: 4px solid var(--color-primary);
     color: var(--color-white);
     border-radius: 30px;
     text-decoration: none;
-    padding: 7px 0;
-    font-family: inherit;
-    font-weight: 500;
+    padding: 16px 0;
     display: inline-block;
-    margin-top: 27px;
+    margin-top: 32px;
     width: 571px;
 
     @media(max-width: 900px) {
@@ -708,13 +622,14 @@ header {
 
 .video-bar {
   background-color: gray;
-  margin-top: 108px;
+  margin-top: 14px;
   height: 373px;
 }
 
 footer {
   background-color: var(--color-black);
   height: 373px;
+  padding-top: 40px;
 
   @media(max-width: 1180px) {
     height: 100%;
@@ -726,11 +641,11 @@ footer {
     }
   }
   a {
-    margin-top: 3px;
-    margin-bottom: 30px;
+    font-family: var(--national-2);
+    margin-bottom: 19px;
     display: inline-block;
-    font-weight: 500;
-    transform: scaleY(1.2);
+    font-weight: bold;
+    font-size: 19px;
 
     @media(max-width: 1180px) {
       margin-bottom: 50px;
@@ -738,12 +653,10 @@ footer {
   }
   
   p {
-    font-size: 9.8px;  
-    font-weight: 300;   
-    transform: scaleY(1.4);
-    letter-spacing: .7px;
-    line-height: 1.2;
-    padding-top: 16px;
+    font-family: var(--national-2);
+    font-size: 14px;  
+    font-weight: 300;
+    line-height: 1.37;
     margin-bottom: 40px;
   }
 }
